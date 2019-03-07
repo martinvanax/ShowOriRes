@@ -33,12 +33,26 @@ Choose the time interval you want. A value of 2 minutes is about right. Choose t
 ## Final check
 Now look at the TVs and make sure it is showing all the categories that you want. To make sure the results are being refreshed, look at the status time of the preliminary results. They should be updated every time the page reaches the bottom and refreshes.
 
-
-
 <br><br><br>
 Written by [Rui Botão][rui].<br>
 Feb 2018
 
-
 [rui]: mailto:rui@ruibotao.com "Rui"
 [OE2010]: http://www.sportsoftware.de/ "OE2010"
+
+## Fork modifications
+This fork provide file based configuration. You will generate from OE only one result file and script handle division to columns based on json config file.
+You can prepare configuration for more TV screens and choose the prepared TV from URL.
+It also automatically set column width based on number of columns for each TV.
+
+If you run page from webserver you can use almost every available browser. Tested with Chrome and from Raspberry Pi - Raspbian browser.
+Preparation for priority category show in config file. Each category in cofig file has key shortcut ex. "D10L": "q",
+The intention is to provide keyboard with category labels on keys and key press will scroll and refresh selected category immediately.
+<br><br><br>
+Modified by Martin Vana <br>
+
+
+
+
+
+
